@@ -258,7 +258,7 @@ h1 {
 
 .container .card img:hover {
   filter: brightness(1.2);
-  transform: rotate(-2deg);
+  transform: rotate(2deg);
   transition: 0.5s;
 }
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/artists.css">
+    <link rel="icon" href="../bilder/MUse'.png">
+    <title>Muse</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Muse</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/songs.html" >Songs</a></li>
+                <li><a href="#" class="active">Artists</a></li>
+                <li><a href="../html/albums.html">Albums</a></li>
+                <li><a href="../html/aboutus.html">About us</a></li>
+                <li><a href="../html/login.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-4 container">
+        <div class="card">
+            <a href="subartist.html"><img src="../bilder/trebi2.jpg" alt=""></a>
+            <h1>Travis Scott</h1>
+            
+        </div>
+
+        <div class="card">
+            <a href="subartist.html"><img src="../bilder/arden chones.jpg" alt=""></a>
+            <h1>Arden Jones</h1>
+            
+        </div>
+        <div class="card">
+            <a href="subartist.html"><img src="../bilder/pink floyd.jpg" alt=""></a>
+        <h1>Pink Floyd</h1>
+            
+        </div>
+
+        <div class="card">
+            <a href="subartist.html"><img src="../bilder/ompan.jpg" alt=""></a>
+            <h1>Oiscicle melonpan</h1>
+            
+        </div>
+    </div>
+
+    <div class="filler">
+    </div>
+
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+            <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="#">Artists</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <p>Muse | All rights reserved</p>
+    </footer>
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

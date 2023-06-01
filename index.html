@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css//style.css">
+    <link rel="icon" href="../bilder/MUse'.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <title>Muse</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Muse</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div><!--Här designar jag min hamburgarmeny-->
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Account</a></li>
+            </ul><!--Knapparna till min nav-bar med länkar-->
+        </nav>
+    </header>
+ <div class="container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <a href="songs.html"><img src="../bilder/arcmonk.jpg" alt=""></a>
+                <h1>Songs</h1>
+            </div>
+            <div class="swiper-slide">
+                <a href="artists.html"><img src="../bilder/trebi.jpg" alt=""></a>
+                <h1>Artists</h1>
+            </div>
+            <div class="swiper-slide">
+                <a href="albums.html"><img src="../bilder/elboms.jpg" alt=""></a>
+                <h1>Albums</h1><!--Mina kort i min slider och mitt main content på sidan.-->
+            </div>
+        </div>
+        <div class="slider-btns">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> <!-- Knapparna för att navigera min image slider-->
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul><!--De importerade bilderna i min footer-->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </ul><!--En lista med meny i min footer-->
+        <p>Muse | All rights reserved</p>
+    </footer>
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function() {  <!-- min hamburger klass får en onclick funktion.-->
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active");
+        }
+    </script><!--min nav-bar klass får en funktion som aktiverar min dropdownmeny.-->>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!--Jag länkar ionicons så att jag kan kalla på ikoner från deras hemsida med en rad kod.-->
+    <script  src="https://code.jquery.com/jquery-3.6.3.js"integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script tpe="text/javascript"> <!---->
+        $('.s-checkbox').on('change', function(){
+    $('.s-checkbox').not(this).prop('checked',false)
+});
+
+var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",//* Imagesliderns byter till den tidigare bilden man var på. 
+      },
+    
+      breakpoints: {
+        100: { 
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },//* 1  bild visas fram tills att bredden är 100px
+        900: { 
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },//* 2 st bilder visas fram tills att bredden är 900px
+        1400: { 
+          slidesPerView: 3,
+          spaceBetween: 0,
+        }//* 3 st bilder visas fram tills att bredden är 1400px
+      
+      },
+    });
+    </script>
+
+</body>
+
+</html>
